@@ -9,3 +9,5 @@ This plugin does:
 ![Example](/watchers.png)
 
 Compatible with redmine 5.x version
+
+Don't forget to apply the patch!

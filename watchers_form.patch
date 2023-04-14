@@ -1,0 +1,11 @@
+--- a/app/views/issues/_watchers_form.html.erb	2023-03-23 15:36:10.655810541 +0300
++++ b/app/views/issues/_watchers_form.html.erb	2023-03-23 15:35:54.219974874 +0300
+@@ -2,7 +2,7 @@
+   <%= hidden_field_tag 'issue[watcher_user_ids][]', '' %>
+   <p id="watchers_form"><label><%= l(:label_issue_watchers) %></label>
+   <span id="watchers_inputs">
+-    <%= watchers_checkboxes(@issue, users_for_new_issue_watchers(@issue)) %>
++    <%= watchers_checkboxes(@issue, users_for_new_issue_watchers(@issue), false) %>
+   </span>
+   <span class="search_for_watchers">
+   <%= link_to l(:label_search_for_watchers),
