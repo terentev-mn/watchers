@@ -1,2 +1,0 @@
-# watchers
-Redmine add watchers
