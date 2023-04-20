@@ -4,7 +4,7 @@ require 'redmine'
 require 'logger'
 require_dependency 'tw_watchers'
 
-Redmine::Plugin.register :tw_watchers do
+Redmine::Plugin.register :watchers do
   name 'Timeweb Watchers'
   author 'Terentev Maksim'
   description 'Convient adding of watchers'
