@@ -1,0 +1,15 @@
+<fieldset>
+  <legend>Watchers settings</legend>
+  <p>
+  <label>auto add assigned user to watchers</label>
+  <%= check_box_tag 'settings[add_assigned_user]', true, settings['add_assigned_user'] %>
+  </p>
+  <p>
+  <label>show author's groups</label>
+  <%= check_box_tag 'settings[show_groups]', true, settings['show_groups'] %>
+  </p>
+  <p>
+  <label>show author</label>
+  <%= check_box_tag 'settings[show_author]', true, settings['show_author'] %>
+  </p>
+</fieldset>

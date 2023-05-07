@@ -8,8 +8,11 @@ Redmine::Plugin.register :watchers do
   name 'Timeweb Watchers'
   author 'Terentev Maksim'
   description 'Convient adding of watchers'
-  version '0.0.1'
+  version '0.0.2'
   url 'https://github.com/terentev-mn/watchers'
   author_url 'https://github.com/terentev-mn'
-
+  settings default: {'add_assigned_user' => true,
+                     'show_author' => true,
+                     'show_groups' => true,
+                    }, partial: 'watchers/settings'
 end
