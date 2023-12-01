@@ -42,7 +42,7 @@ module TwWatchers
             # Rails.logger.info("Tw Watchers: Context #{context}")
             # when hook applying in view_issues_new_top 'assigned_to' is not defined yet, so add him here
             if Setting.plugin_watchers['add_assigned_user']
-                # Rails.logger.info("Tw Watchers: Assign issue to creator #{User.find(context[:issue][:assigned_to_id])}")
+                # Rails.logger.info("Tw Watchers: Assign issue to creator #{User.find_by_id(context[:issue][:assigned_to_id])}")
                 if context[:params][:issue][:assigned_to_id] and context[:params][:issue][:assigned_to_id].length() > 0
                     if not context[:issue].watcher_user_ids
                         context[:issue].watcher_user_ids = Array.new
